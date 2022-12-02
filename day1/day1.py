@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import os
 
-my_absolute_path = r'/home/raven/Documents/UVA/Advent_of_code/day1/input.txt'
+my_absolute_path = r'/home/raven/Documents/code/Advent_of_code_2022/day1/input.txt'
 
 cal1 = 0; cal2 = 0; cal3 = 0; current_cal = 0
 

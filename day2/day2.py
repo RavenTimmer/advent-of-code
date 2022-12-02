@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-lines = open(r'/home/raven/Documents/UVA/Advent_of_code/day2/input.txt', 'r').readlines()
+lines = open(r'/home/raven/Documents/code/Advent_of_code_2022/day2/input.txt', 'r').readlines()
 total_points = 0; played_hand = [2, 3, 1, 2, 3, 1, 2]
 
 for line in lines:
