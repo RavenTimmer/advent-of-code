@@ -7,14 +7,15 @@ lines = file1.readlines()
 
 total = 0
 
+def compare_ranges(x,y):
+    return True if set(x) & set(y) else False
+
 for line in lines:
     split = line.strip().split(",")
     range1 = split[0].split("-")
     range2 = split[1].split("-")
 
-    if int(range1[0]) <= int(range2[0]) and int(range1[1]) >= int(range2[1]):
-        total += 1
-    elif int(range1[0]) >= int(range2[0]) and int(range1[1]) <= int(range2[1]):
+    if compare_ranges(range(int(range1[0]), int(range1[1]) + 1, 1), range(int(range2[0]), int(range2[1]) + 1, 1)):
         total += 1
 
 print(total)
